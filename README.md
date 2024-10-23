@@ -33,7 +33,8 @@ Neste projeto, o nosso **Producer** é responsável por gerar e enviar uma mensa
 
 ## 🎯 O que é um "Consumidor de Mensagem"?
 
-O **Consumer** é a entidade que consome as mensagens enviadas para as filas. Ele escuta a fila específica e processa cada mensagem conforme elas são disponibilizadas. Neste projeto, o Consumer deve ser configurado separadamente.
+O **Consumer** é a entidade que consome as mensagens enviadas para as filas. Ele escuta a fila específica e processa cada mensagem conforme elas são disponibilizadas. Neste projeto, o Consumer deve ser configurado separadamente
+neste repositório: [Consumer](https://github.com/Mauro-Pereira/RabbitMQ-Consumer).
 
 ---
 
@@ -81,6 +82,17 @@ Para acessar a página de Admin do RabbitMQ para fazer gerenciamento você fará
     usuário: guest
     senha: guest
 ```
+---
+
+### 👨‍💻 Como enviar uma mensagem para RabbitMQ?
+
+Para enviar a mensagem para a fila do RabbitMQ, quando projeto subir, você deve acessar a seguinte URL:
+
+http://localhost:8080/send
+
+acessando a URL acima, uma mensagem será enviada através do método GET.
+
+
 
 ### 📦 Tecnologias Utilizadas
 
@@ -89,12 +101,6 @@ Para acessar a página de Admin do RabbitMQ para fazer gerenciamento você fará
 - **RabbitMQ**
 - **Docker**
 - **Maven**
-
----
-
-### 👨‍💻 Contribua ou Use em Seus Projetos
-
-Este projeto foi desenvolvido com foco na simplicidade e modularidade, sendo um ótimo exemplo para quem quer entender como funciona a comunicação via RabbitMQ. Fique à vontade para contribuir ou usá-lo como base em seus projetos reais.
 
 ---
 
